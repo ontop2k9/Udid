@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lấy UDID thiết bị iOS</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 Lấy UDID thiết bị iOS</h1>
+        <div class="instructions">
+            <h2>Hướng dẫn sử dụng:</h2>
+            <ol>
+                <li>Nhấn vào nút "Lấy UDID" bên dưới</li>
+                <li>Cho phép tải xuống file cấu hình</li>
+                <li>Vào Cài đặt > Tổng quan > Quản lý VPN & thiết bị</li>
+                <li>Nhấn vào "UDID Detector" và chọn "Cài đặt"</li>
+                <li>Hoàn thành quá trình cài đặt</li>
+                <li>UDID sẽ được hiển thị trên trang web này</li>
+            </ol>
+        </div>
+        
+        <div class="action-section">
+            <button id="getUdidBtn" class="get-udid-btn">
+                📱 Lấy UDID
+            </button>
+        </div>
+
+        <div id="result" class="result-section" style="display: none;">
+            <h3>✅ UDID của thiết bị:</h3>
+            <div class="udid-display">
+                <input type="text" id="udidValue" readonly>
+                <button id="copyBtn" class="copy-btn">📋 Sao chép</button>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <h3>ℹ️ Thông tin:</h3>
+            <ul>
+                <li>UDID (Unique Device Identifier) là mã định danh duy nhất của thiết bị iOS</li>
+                <li>Phương pháp này hoàn toàn an toàn và không thu thập thông tin cá nhân</li>
+                <li>File cấu hình có thể được gỡ bỏ sau khi lấy UDID</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
